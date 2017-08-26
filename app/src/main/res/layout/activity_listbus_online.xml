@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:text="เลือกสายรถประจำทางในการเดินทาง"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/listbus"
+        tools:layout_editor_absoluteX="7dp" />
+    <Button
+        android:id="@+id/buttOnline"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:onClick="Onclick1"
+        android:text="ไม่มีรถประจำทาง"
+        android:textSize="30dp" />
+
+    <fragment
+        android:id="@+id/mapTest"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></fragment>
+
+</LinearLayout>
