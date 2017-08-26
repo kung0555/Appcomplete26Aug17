@@ -112,7 +112,7 @@ public class loaddata extends AppCompatActivity {
             } else {
                 //Empty Data and No Internet ==> Load Data from Server
                 Log.d(tag, "Empty Data and No Internet ==> Load Data from Server");
-                Toast.makeText(loaddata.this, "กรุณาเปิดอินเตอร์เน็ตและเข้าแอพพลิเคชั่นใหม่อีกครั้งเพื่อดาวโหลดข้อมูลสายรถประจำทาง", Toast.LENGTH_LONG).show();
+                Toast.makeText(loaddata.this, "กรุณาเปิดอินเตอร์เน็ตและเข้าแอปพลิเคชันใหม่อีกครั้งเพื่อดาวโหลดข้อมูลสายรถประจำทาง", Toast.LENGTH_LONG).show();
             }
         }
     }
@@ -150,10 +150,10 @@ public class loaddata extends AppCompatActivity {
 
     public void onBackPressed() {
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-        dialog.setTitle("ออกจากแอพพลิเคชั่น");
+        dialog.setTitle("ออกจากแอปพลิเคชัน");
         dialog.setIcon(R.drawable.iconn);
         dialog.setCancelable(true);
-        dialog.setMessage("คุณต้องการออกจากแอพพลิเคชั่น หรือไม่?");
+        dialog.setMessage("คุณต้องการออกจากแอปพลิเคชัน หรือไม่?");
 
         dialog.setPositiveButton("ตกลง", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {

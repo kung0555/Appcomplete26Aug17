@@ -325,10 +325,10 @@ public class notifications_offline extends AppCompatActivity {
 
     public void onBackPressed() {
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-        dialog.setTitle("ออกจากแอพพลิเคชั่น");
+        dialog.setTitle("ออกจากแอปพลิเคชัน");
         dialog.setIcon(R.drawable.iconn);
         dialog.setCancelable(true);
-        dialog.setMessage("คุณต้องการออกจากแอพพลิเคชั่น หรือไม่?");
+        dialog.setMessage("คุณต้องการออกจากแอปพลิเคชัน หรือไม่?");
 
         dialog.setPositiveButton("ตกลง", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
