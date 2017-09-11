@@ -262,11 +262,11 @@ public class notifications_offline extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         //for Network
-        Location networkLocation = myFindLocation(LocationManager.NETWORK_PROVIDER);
-        if (networkLocation != null) {
-            latStartADouble = networkLocation.getLatitude();
-            lngStartADouble = networkLocation.getLongitude();
-        }
+//        Location networkLocation = myFindLocation(LocationManager.NETWORK_PROVIDER);
+//        if (networkLocation != null) {
+//            latStartADouble = networkLocation.getLatitude();
+//            lngStartADouble = networkLocation.getLongitude();
+//        }
         //for GPS
         Location gpsLocation = myFindLocation(LocationManager.GPS_PROVIDER);
         if (gpsLocation != null) {
